@@ -13,7 +13,7 @@ export class ApiService {
   // Method to fetch GitHub user
   getUsers(pageSize: number): Observable<any[]> {
     // Include authentication token in the request headers
-    const headers = new HttpHeaders().set('Authorization', 'Bearer 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');
+    const headers = new HttpHeaders().set('Authorization', 'Bearer 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');
 
     // Make the GET request to /users with pagination parameters
     return this.http.get<any[]>(`${this.baseUrl}/users?per_page=${pageSize}`, { headers });
@@ -22,8 +22,9 @@ export class ApiService {
 
   searchUsers(name : any, pageSize : any): Observable<any[]> {
     // Include authentication token in the request headers
-    const headers = new HttpHeaders().set('Authorization', 'Bearer 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');
-
+    const headers = new HttpHeaders().set('Authorization', 'Bearer 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');
+//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
+//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
     // Make the GET request to /users with pagination parameters
     return this.http.get<any[]>(`${this.baseUrl}/search/users?q=${name}&per_page=${pageSize}`, { headers });
   }
