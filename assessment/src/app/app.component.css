@@ -1,0 +1,57 @@
+body {
+    background-color: white; /* Set background color to white */
+  }
+  
+  .header {
+    background-color: white; /* Set background color to white */
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .brand {
+    color: #006bff; /* Set brand color to blue */
+    margin: 0;
+  }
+  
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white; /* Set background color to white */
+  }
+  
+  .gap {
+    height: 20px; /* Set the height of the gap */
+  }
+  
+  .search-container {
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .list-container {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white; /* Set background color to white */
+  }
+  
+  .user-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .user-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .user-item:last-child {
+    border-bottom: none;
+  }
+  

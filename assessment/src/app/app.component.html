@@ -1,10 +1,23 @@
+<div class="header">
+  <h1 class="brand">Shakespeare.ai</h1>
+</div>
+
 <div class="container">
+  <div class="gap"></div> <!-- Leave some gap below the brand heading -->
   <div class="search-container">
-    <input type="text" id="searchInput" placeholder="Search..." [(ngModel)]="searchQuery" (input)="updateSearchQuery($event)">
+    <input 
+      type="text" 
+      id="searchInput" 
+      class="search-input" 
+      placeholder="Search..." 
+      [(ngModel)]="searchQuery" 
+      (input)="updateSearchQuery($event)">
   </div>
   <div class="list-container">
-    <ul>
-      <li *ngFor="let item of users">{{ item.login }}</li>
+    <ul class="user-list">
+      <li *ngFor="let item of users" class="user-item">
+        {{ item.login }}
+      </li>
     </ul>
   </div>
 </div>
